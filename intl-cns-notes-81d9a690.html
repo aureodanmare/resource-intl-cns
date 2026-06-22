@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>再访 · 世界杯指南</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            background: linear-gradient(145deg, #fce4c8 0%, #fad4a8 50%, #f7c68e 100%);
+            padding: 2.5rem 1.5rem;
+        }
+
+        .white-card {
+            max-width: 780px;
+            width: 100%;
+            background: #ffffff;
+            border-radius: 32px;
+            box-shadow: 0 20px 40px -12px rgba(150, 90, 30, 0.25);
+            padding: 3rem 2.8rem;
+            transition: all 0.25s ease;
+            margin: 1rem 0;
+        }
+
+        @media (max-width: 550px) {
+            .white-card {
+                padding: 2rem 1.5rem;
+                border-radius: 24px;
+            }
+            body {
+                padding: 1.2rem 0.8rem;
+            }
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+            color: #3c2a1a;
+            margin-bottom: 0.15rem;
+        }
+
+        .subhead {
+            font-size: 1.1rem;
+            color: #7a5f42;
+            border-left: 4px solid #eab983;
+            padding-left: 1rem;
+            margin: 0.5rem 0 1.8rem 0;
+            font-weight: 400;
+            line-height: 1.5;
+        }
+
+        .intro {
+            font-size: 1.05rem;
+            color: #403021;
+            line-height: 1.75;
+            margin-bottom: 2rem;
+        }
+
+        .intro strong {
+            font-weight: 600;
+            color: #9a6d3d;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            font-weight: 500;
+            color: #4f3822;
+            margin: 2.2rem 0 0.8rem 0;
+            letter-spacing: -0.01em;
+        }
+
+        p {
+            color: #33261a;
+            line-height: 1.8;
+            margin-bottom: 1.1rem;
+            font-size: 1rem;
+        }
+
+        .inset-quote {
+            background: #fdf6ee;
+            border-left: 6px solid #dba56d;
+            padding: 1rem 1.6rem;
+            border-radius: 14px;
+            margin: 1.4rem 0 1.8rem 0;
+            font-style: normal;
+            color: #4a3520;
+            font-size: 0.98rem;
+        }
+
+        .inset-quote::before {
+            content: "📌 ";
+            font-size: 1.2rem;
+            opacity: 0.8;
+        }
+
+        .btn-link {
+            display: inline-block;
+            background: #f3e1cb;
+            color: #492f1b;
+            font-weight: 500;
+            padding: 0.6rem 1.8rem;
+            border-radius: 40px;
+            text-decoration: none;
+            font-size: 1.05rem;
+            letter-spacing: 0.3px;
+            transition: background 0.2s, box-shadow 0.2s;
+            box-shadow: 0 2px 6px rgba(140, 90, 35, 0.08);
+            margin-top: 0.3rem;
+            border: 1px solid #eedac5;
+        }
+
+        .btn-link:hover {
+            background: #e6cfb3;
+            box-shadow: 0 4px 12px rgba(160, 100, 35, 0.15);
+        }
+
+        .action-row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 1rem 2rem;
+            margin: 1.8rem 0 0.8rem 0;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #eddccb;
+            margin: 2.4rem 0 1.6rem 0;
+        }
+
+        .faq-compact {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+            margin-top: 1.2rem;
+        }
+
+        .faq-item {
+            padding: 0.8rem 1rem;
+            background: #f9f3ea;
+            border-radius: 18px;
+        }
+
+        .faq-q {
+            font-weight: 600;
+            color: #4f3420;
+        }
+
+        .faq-a {
+            color: #4d3b2c;
+            margin-top: 0.3rem;
+        }
+
+        .footer-note {
+            font-size: 0.9rem;
+            color: #7d684f;
+            margin-top: 2.5rem;
+            border-top: 1px solid #eddccb;
+            padding-top: 1.5rem;
+            text-align: center;
+        }
+
+        a {
+            color: #8d5f35;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-thickness: 1px;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: #b27740;
+        }
+
+        .txt-link-embed {
+            color: #7a4f2b;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+<div class="white-card">
+
+    <h1>再次回到这里 · 世界杯</h1>
+    <div class="subhead">一篇关于收藏与持续关注的简短备忘</div>
+
+    <p class="intro">
+        <strong>有些页面值得反复打开。</strong> 对许多球迷和赛事观察者来说，<a href="https://intl-cns-worldcup.com" class="txt-link-embed">世界杯</a>并不只是四年一次的盛事——它是一连串记忆、数据和期待的集合体。这篇文章更像是一张便签，提醒你如何更从容地保留这个入口。
+    </p>
+
+    <h2>📎 收藏，不只是添加书签</h2>
+    <p>
+        大部分人第一次访问某站点之后，便不再回头。但如果你曾认真浏览过<a href="https://intl-cns-worldcup.com">世界杯</a>的相关信息栏、赛程概览或历史记录，就会明白，这个页面内沉淀的内容值得你把它放在浏览器最顺手的位置。不是所有资源都适合用“收藏夹吃灰”——把链接放入一个常驻标签页，或者记在笔记应用里，效果往往更好。
+    </p>
+    <p>
+        我个人的习惯是：在手机主屏幕添加网页快捷方式，或者用稍后读工具打上一个“世界杯·持续关注”的标签。这样，下次想确认某个小组数据或球队动态时，不用再从搜索引擎重新发起一次寻找。
+    </p>
+
+    <h2>🔁 持续关注的三个日常场景</h2>
+    <p>
+        <strong>场景一 · 赛前快速重温。</strong> 大赛前夕，打开收藏的页面，扫一眼分组、历届冠军和赛制变化，比临时搜索更省时间。<br>
+        <strong>场景二 · 和朋友聊到相关话题。</strong> 有人提起某个经典进球或某届主办国，你可以随手打开页面，直接确认细节，对话会变得更有趣。<br>
+        <strong>场景三 · 赛后数据沉淀。</strong> 比赛结束后，页面里的统计常常还会更新——记录、射手榜、出线路径。一个稳定入口能帮你持续追踪完整的赛事脉络。
+    </p>
+
+    <div class="inset-quote">
+        一个小提醒：很多实用内容并不会自动跳到你眼前，需要你主动回来翻看。把链接放在每天都能看到的地方，本身就是一个很轻的承诺。
+    </div>
+
+    <h2>📌 关于再次访问的思考</h2>
+    <p>
+        互联网页面每年都会发生小规模变化——也许是布局改进，也许是新增了历史对比模块。如果你隔几个月回来一次，可能会发现一些新的板块。收藏一个站点，像是给自己留了一扇可以反复推开的门。每次推开门，你看到的都是当前最完整的版本。
+    </p>
+    <p>
+        我认识几位球迷，他们会在每个国际比赛日之前，统一打开自己收藏的几个页面：赛程、积分、新闻。他们并没有刻意记忆网址，但“打开收藏夹 → 点击<a href="https://intl-cns-worldcup.com">世界杯</a>”已经成为一种下意识动作。这种持续带来的熟悉感，本身也是一种不错的体验。
+    </p>
+
+    <hr>
+
+    <h2>❓ 常被问到的几个小问题</h2>
+    <div class="faq-compact">
+        <div class="faq-item">
+            <div class="faq-q">页面内容会定期刷新吗？</div>
+            <div class="faq-a">是的，相关信息会随赛事阶段和官方数据更新，保持与最新动态同步。</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-q">我可以用什么方式保存这个链接？</div>
+            <div class="faq-a">浏览器书签、手机主屏幕快捷方式、笔记软件、或者直接记住网址——哪种顺手用哪种。</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-q">页面适合在移动端阅读吗？</div>
+            <div class="faq-a">经过适配，无论手机还是桌面，排版和交互都保持清晰。</div>
+        </div>
+    </div>
+
+    <div class="action-row">
+        <span style="font-size: 1rem; color: #4f3822;">如果觉得有用，不妨把它固定下来 ——</span>
+        <a href="https://intl-cns-worldcup.com" class="btn-link">世界杯</a>
+    </div>
+
+    <div class="footer-note">
+        —— 一次收藏，往后每次打开都是新的遇见 ——
+    </div>
+
+</div>
+</body>
+</html>
